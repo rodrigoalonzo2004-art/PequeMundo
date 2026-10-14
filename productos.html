@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - PequeMundo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="encabezado"><h1>PequeMundo</h1><p>Nuestros productos</p></header>
+  <nav class="menu">
+    <a href="index.html">Inicio</a><a href="productos.html">Nuestros productos</a>
+    <a href="registro.html">Registro</a><a href="contacto.html">Contacto</a>
+  </nav>
+  <main class="contenedor">
+    <h2>Nuestros productos</h2>
+    <p>Elige una prenda y agrégala al carrito.</p>
+    <section class="productos">
+      <article class="tarjeta">
+        <img src="https://images.pexels.com/photos/15179151/pexels-photo-15179151.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Polo con estampado de dinosaurio">
+        <h3>Polo Dinosaurio</h3><p>Un polo cómodo para todos los días.</p><strong>S/ 35.00</strong>
+        <button class="boton" onclick="agregar('Polo Dinosaurio',35)">Agregar al carrito</button>
+      </article>
+      <article class="tarjeta">
+        <img src="https://images.pexels.com/photos/6093535/pexels-photo-6093535.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Casaca azul con pantalón azul">
+        <h3>Casaca Azul</h3><p>Ideal para los días frescos.</p><strong>S/ 65.00</strong>
+        <button class="boton" onclick="agregar('Casaca Azul',65)">Agregar al carrito</button>
+      </article>
+      <article class="tarjeta">
+        <img src="https://images.pexels.com/photos/5560037/pexels-photo-5560037.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Niño con pantalón beige">
+        <h3>Look con Pantalón Beige</h3><p>Conjunto casual en tonos beige y blanco.</p><strong>S/ 49.00</strong>
+        <button class="boton" onclick="agregar('Look con Pantalón Beige',49)">Agregar al carrito</button>
+      </article>
+      <article class="tarjeta">
+        <img src="https://images.pexels.com/photos/9980987/pexels-photo-9980987.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Camisa infantil a rayas">
+        <h3>Camisa Infantil a Rayas</h3><p>Una camisa cómoda para un look casual.</p><strong>S/ 42.00</strong>
+        <button class="boton" onclick="agregar('Camisa Infantil a Rayas',42)">Agregar al carrito</button>
+      </article>
+      <article class="tarjeta">
+        <img src="https://images.pexels.com/photos/13513515/pexels-photo-13513515.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Conjunto de polo verde y short denim">
+        <h3>Polo Verde con Short Denim</h3><p>Un conjunto fresco para días de juego.</p><strong>S/ 38.00</strong>
+        <button class="boton" onclick="agregar('Polo Verde con Short Denim',38)">Agregar al carrito</button>
+      </article>
+      <article class="tarjeta">
+        <img src="https://images.pexels.com/photos/6093535/pexels-photo-6093535.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Conjunto azul de casaca y pantalón">
+        <h3>Casaca y Pantalón Azul</h3><p>Un conjunto cómodo para los días frescos.</p><strong>S/ 79.00</strong>
+        <button class="boton" onclick="agregar('Casaca y Pantalón Azul',79)">Agregar al carrito</button>
+      </article>
+    </section>
+    <section class="carrito">
+      <h2>Carrito de compras</h2>
+      <ul id="lista-carrito"><li>Aún no agregaste productos.</li></ul>
+      <p><strong>Total: S/ <span id="total">0.00</span></strong></p>
+      <button class="boton" onclick="vaciar()">Vaciar carrito</button>
+      <button class="boton" onclick="comprar()">Finalizar compra</button>
+      <p id="mensaje" role="status"></p>
+    </section>
+  </main>
+  <footer>© 2026 PequeMundo - Proyecto académico</footer>
+  <script src="script.js"></script>
+</body>
+</html>

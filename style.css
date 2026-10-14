@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #173d5e; background: #f1f9fe; font-size: 14px; }
+.encabezado { text-align: center; background: #79cef7; color: #07569a; padding: 18px 10px; }
+.encabezado h1 { margin: 0 0 8px; font-size: 30px; }
+.encabezado p { margin: 0; font-weight: bold; }
+.menu { background: #168fe0; padding: 13px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+.menu a { color: white; text-decoration: none; font-weight: bold; }
+.menu a:hover { text-decoration: underline; }
+.contenedor { max-width: 900px; margin: 28px auto; padding: 0 18px 24px; }
+h2 { color: #087bd0; font-size: 21px; }
+h3 { color: #07569a; font-size: 16px; }
+.portada { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 25px; background: #dff3ff; border: 2px solid #83d2ff; border-radius: 12px; padding: 12px; margin-bottom: 28px; }
+.portada img { width: 100%; height: 250px; object-fit: cover; border-radius: 7px; }
+.productos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 18px 0; }
+.tarjeta { background: white; border: 1px solid #80cfff; border-radius: 9px; padding: 10px; }
+.tarjeta img { width: 100%; height: 180px; object-fit: cover; border-radius: 5px; }
+.tarjeta p { line-height: 1.45; }
+.tarjeta strong { display: block; color: #087bd0; margin: 10px 0; }
+.boton { display: inline-block; border: 0; border-radius: 5px; padding: 10px 14px; margin-top: 8px; background: #1598f5; color: white; text-decoration: none; font-weight: bold; cursor: pointer; font-size: 13px; }
+.boton:hover { background: #0872c5; }
+.carrito { margin-top: 28px; padding: 16px; background: #e0f3ff; border: 1px solid #80cfff; border-radius: 8px; }
+.carrito li { margin: 8px 0; }
+.formulario { max-width: 650px; min-height: 360px; }
+form { max-width: 400px; }
+label { display: block; margin: 12px 0 6px; font-weight: bold; }
+input, textarea { width: 100%; padding: 10px; border: 1px solid #a8d8f5; border-radius: 5px; font: inherit; background: white; }
+textarea { resize: vertical; }
+footer { background: #1058a5; color: white; text-align: center; padding: 24px 12px; margin-top: 30px; }
+@media (max-width: 650px) {
+  .portada { grid-template-columns: 1fr; }
+  .portada img { height: 220px; }
+  .productos { grid-template-columns: 1fr; }
+  .tarjeta img { height: 230px; }
+  .menu { gap: 13px; }
+}

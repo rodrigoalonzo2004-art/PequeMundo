@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro - PequeMundo</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="encabezado"><h1>PequeMundo</h1><p>Crea tu cuenta</p></header>
+<nav class="menu"><a href="index.html">Inicio</a><a href="productos.html">Nuestros productos</a><a href="registro.html">Registro</a><a href="contacto.html">Contacto</a></nav>
+<main class="contenedor formulario">
+<h2>Registro de usuario</h2><p>Completa tus datos para registrarte en la tienda.</p>
+<form onsubmit="registrar(event)">
+<label for="nombre">Nombre completo</label><input id="nombre" required>
+<label for="correo">Correo electrónico</label><input id="correo" type="email" required>
+<label for="clave">Contraseña</label><input id="clave" type="password" minlength="6" required>
+<button class="boton" type="submit">Crear cuenta</button>
+<p id="respuesta" role="status"></p>
+</form></main>
+<footer>© 2026 PequeMundo - Proyecto académico</footer>
+<script src="script.js"></script>
+</body></html>
