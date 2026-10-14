@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420">
+<rect width="640" height="420" fill="#f8fbff"/>
+<rect x="16" y="16" width="608" height="388" rx="12" fill="white" stroke="#80cfff" stroke-width="3"/>
+<g transform="translate(180 48)">
+<path d="M90 20 L145 0 L180 30 L230 0 L285 22 L260 95 L230 82 L230 280 L110 280 L110 82 L80 95 L55 30 Z" fill="#58a6d9" stroke="#173d5e" stroke-width="4" stroke-linejoin="round"/>
+<path d="M145 0 Q187 65 230 0" fill="none" stroke="#173d5e" stroke-width="5"/>
+<path d="M170 38 L170 275" stroke="#ffffff" stroke-width="4" opacity="0.8"/>
+<circle cx="170" cy="100" r="5" fill="#173d5e"/><circle cx="170" cy="140" r="5" fill="#173d5e"/><circle cx="170" cy="180" r="5" fill="#173d5e"/>
+</g>
+<text x="320" y="370" font-family="Arial, sans-serif" font-size="27" font-weight="bold" text-anchor="middle" fill="#07569a">Polo Dinosaurio</text>
+</svg>
